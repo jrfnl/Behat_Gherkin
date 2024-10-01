@@ -2,7 +2,7 @@ name: Build
 
 on:
   push:
-    branches: [master]
+#    branches: [master]
   pull_request:
   release:
     types: [created]
@@ -28,7 +28,7 @@ jobs:
               symfony-version: '5.*'
 
     steps:
-      -   uses: actions/checkout@v2
+      -   uses: actions/checkout@v4
 
       -   name: Setup PHP
           uses: shivammathur/setup-php@v2
